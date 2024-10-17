@@ -1,6 +1,6 @@
 # omniauth-generator
 
-Rails Generator to install Omniauth for Devise
+Rails Generator to install Omniauth for Devise via `rails g devise:omniauth:install`
 
 ## Motivation
 
