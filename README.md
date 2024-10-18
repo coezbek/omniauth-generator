@@ -73,3 +73,4 @@ rails server
 
 - The generator is able to support multiple `omniauth-xxx` gems at the same time, but users can not log into the same account from multiple providers when those providers provide the same email back. Compare this answer on SO: https://stackoverflow.com/a/22126562/278842
 - The generator is using secrets from the Rails credentials file. If you prefer to use ENV you need to adjust the code in `config/initializers/devise.rb` accordingly.
+- I did remove a line from the Omniauth callback controller for `google-oauth2` which didn't make sense to me. It might break something. https://github.com/zquestz/omniauth-google-oauth2/issues/466 
