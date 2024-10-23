@@ -33,8 +33,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     error.to_s.humanize if error
   end
 
+  # Might want to override default behaviour: set flash and redirect to 
+  # after_omniauth_failure_path_for(resource_name)
   def failure
     # Might want to log this/instrument/notify
-    redirect_to root_path
+    super
   end
 end
