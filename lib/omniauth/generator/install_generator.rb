@@ -29,6 +29,7 @@ module Devise
 
       def database_update
         generate :migration, "AddOmniauthToUsers provider:string uid:string"
+        insert_into_file Dir.glob("db/migrate/*_add_omniauth_to_users.rb").first, before: '  end', '  add_index :users, [ :uid, :provider ]\n'
       end
 
       def update_application
