@@ -69,6 +69,27 @@ rails server
 - All styling and CSS is inlined in the `Helper` so this Gem should work with any js and css bundler.
 - Put all the social buttons into a separate renderer and separate them from `app/views/devise/shared/_links.html.erb`
 
+## Changelog
+
+### [Unreleased]
+
+### [0.1.2] - 2024-12-20
+
+- Recommend to use `omniauth-linkedin-openid` for LinkedIn
+- Add index to `users` table for [`uid`, `provider`]
+- Fix initiliazation of provider/uid for existing users
+- Add template code for providers which don't provide emails for some users
+- Add a HR between Login and Social buttons
+- Revert override of `def failure` to flash+redirect 
+
+### [0.1.1] - 2024-10-18
+
+- Fixed a bug where the app would not start in an environment where no credentials are available.
+
+### [0.1.0] - 2024-10-17
+
+- Initial release
+
 ## Limitations
 
 - The generator is able to support multiple `omniauth-xxx` gems at the same time, but users can not log into the same account from multiple providers when those providers provide the same email back. Compare this answer on SO: https://stackoverflow.com/a/22126562/278842
