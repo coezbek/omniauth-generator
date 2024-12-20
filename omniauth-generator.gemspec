@@ -13,6 +13,8 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/coezbek/omniauth-generator"
   spec.required_ruby_version = ">= 3.0.0"
 
+  spec.platform = Gem::Platform::RUBY
+
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
