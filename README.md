@@ -41,7 +41,7 @@ bundle add omniauth-generator --group development
 # Install at least one omniauth gem/strategy, e.g. of the following
 bundle add omniauth-google-oauth2
 bundle add omniauth-facebook
-bundle add omniauth-linkedin
+bundle add omniauth-linkedin-openid
 bundle add omniauth-github
 bundle add omniauth-azure-activedirectory-v2
 bundle add omniauth-apple
