@@ -9,15 +9,15 @@ module Devise
 
       def dependencies
 
-        omniauth_strategies = {
+        omniauth_gems = {
           google: :GoogleOauth2,
           facebook: :Facebook,
-          linkedin: :LinkedIn,
+          linkedin: :LinkedinOpenid,
           github: :GitHub,
           microsoft: :AzureActivedirectoryV2,
           apple: :Apple
         }
-        if !omniauth_strategies.any? { |_, strategy_class| Gem.loaded_specs.has_key?("omniauth-#{strategy_class.to_s.underscore.gsub('_', '-')}") }
+        if !omniauth_gems.any? { |_, strategy_class| Gem.loaded_specs.has_key?("omniauth-#{strategy_class.to_s.underscore.gsub('_', '-')}") }
           say_error("Omniauth-generator: Need at least one OmniAuth strategy gem to be installed. Obvious candidates not found.")
           ask("Would you like to continue? (y/n)") do |answer|
             Kernel.exit(1) unless answer.downcase == 'y'

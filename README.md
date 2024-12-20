@@ -12,7 +12,7 @@ This project contains helpers for the following social login buttons:
 - [Microsoft](https://learn.microsoft.com/en-us/entra/identity-platform/howto-add-branding-in-apps)
 - [Apple](https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple)
 - Facebook
-- LinkedIn
+- LinkedIn - [omniauth-linkedin-openid](https://github.com/jclusso/omniauth-linkedin-openid)
 - [GitHub](https://github.com/logos) (they don't have a guideline for how to style their login button)
 
 The buttons have basic styling and should look pretty when `<buttons>` are already styled. This is how they look out of the box with [PicoCSS](https://picocss.com/):
