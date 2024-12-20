@@ -71,7 +71,13 @@ rails server
 
 ## Changelog
 
-### [0.1.4] - Unreleased
+### [0.1.5] - 2024-12-20
+
+- Rubygems is rejecting the update 0.1.4, so I'm trying again with 0.1.5
+
+### [0.1.4] - 2024-12-20
+
+- Fix two whitespace issues
 
 ### [0.1.3] - 2024-12-20
 
