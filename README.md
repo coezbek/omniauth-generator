@@ -71,6 +71,8 @@ rails server
 
 ## Changelog
 
+### [0.1.4] - Unreleased
+
 ### [0.1.3] - 2024-12-20
 
 - Applied wrong order of parameters when inserting index
